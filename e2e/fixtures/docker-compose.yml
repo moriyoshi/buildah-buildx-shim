@@ -1,0 +1,11 @@
+# Compose project exercised by the E2E test. `docker compose build` (with
+# COMPOSE_BAKE=true) translates this into a `docker buildx bake` call, which the
+# buildah-backed shim turns into a `buildah build`.
+services:
+  web:
+    image: buildah-buildx-shim-e2e:web
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        GREETING: hello-from-bake
