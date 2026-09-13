@@ -3,7 +3,7 @@ module github.com/moriyoshi/buildah-buildx-shim
 go 1.26.3
 
 require (
-	github.com/docker/cli v29.5.3+incompatible
+	github.com/docker/cli v29.8.0+incompatible
 	github.com/hashicorp/hcl/v2 v2.24.0
 	github.com/spf13/cobra v1.10.2
 	github.com/spf13/pflag v1.0.10
